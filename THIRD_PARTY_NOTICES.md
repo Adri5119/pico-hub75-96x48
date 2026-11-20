@@ -2,6 +2,12 @@
 
 This repository's original code and documentation are MIT-licensed; that grant does not change the licenses of dependencies, toolchains, or external examples.
 
+## AI-assisted development
+
+**OpenAI ChatGPT / Codex** assisted with row-scanning investigation, implementation and refactoring, diagnostic examples, automated checks, documentation, and preparation of this public repository. The maintainer provided the hardware and physical-test observations. See the [README's AI assistance acknowledgment](README.md#ai-assistance) and its hardware-verification status.
+
+## Upstream components and references
+
 | Component / reference | Use here | Upstream license / attribution |
 |---|---|---|
 | [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library) | Downloaded dependency; base canvas, drawing, text, fonts | BSD-style, copyright (c) 2012 Adafruit Industries. See the retained [license text](licenses/Adafruit-GFX-BSD.txt). |

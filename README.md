@@ -1,6 +1,8 @@
-# Pico HUB75 96x48 — SM5368
+# 96x48 LED Panel Driver for Raspberry Pi Pico — HUB75 SM5368
 
-A small Arduino-Pico library for drawing pixels, text, shapes, and simple animations on **one 96×48 HUB75 LED panel with the SM5368 row-selection protocol**. It provides an Adafruit GFX canvas, a 2,304-byte packed framebuffer, configurable GPIOs, and a deliberately simple software scan loop.
+A small Arduino-Pico library for drawing pixels, text, shapes, and simple animations on a **96x48 LED panel (96×48 RGB LED matrix)** with the **HUB75 interface and SM5368 row-selection protocol**. It targets the Waveshare P2.5 flexible 96x48 panel, revision 24S-A1, with a Raspberry Pi Pico W / RP2040. It provides an Adafruit GFX canvas, a 2,304-byte packed framebuffer, configurable GPIOs, and a deliberately simple software scan loop.
+
+Developed with AI assistance from **OpenAI ChatGPT / Codex**; see [AI assistance](#ai-assistance) for the contribution details.
 
 This grew out of bringing up a panel that showed repeated horizontal bands with ordinary binary HUB75 row addressing. The important part is the **row-selection protocol**, not just setting a library's resolution to 96×48.
 
@@ -209,6 +211,12 @@ pio run -e pico_w -e pico
 ```
 
 Host checks need g++/clang++, or `python -m pip install ziglang`. They compile the actual driver against small GPIO/time and GFX test doubles. Tests cover every pixel and rotation, half-row packing, clipping, pin validation, RGB output mapping, 96 clocks per latch, all 24 row stages, first-row injection, OE blanking, brightness dwell, and the minimum frame period. They verify the requested software sequence, **not electrical behavior, color calibration, or the real panel's response**. Firmware builds use the real Adafruit GFX dependency. GitHub Actions runs these checks for submitted changes; a passing workflow is not a hardware certification.
+
+## AI assistance
+
+This project was developed with substantial AI assistance from **OpenAI ChatGPT / Codex**. The AI assistant helped investigate the SM5368 row-scanning behavior, write and refactor driver code, create drawing and diagnostic examples, develop automated checks, and prepare the documentation and public repository.
+
+The maintainer supplied the hardware, panel identification, requirements, and observations from physical testing. The verification status and remaining physical-panel checks are documented above. This acknowledgment credits the AI-assisted development process; the project's original code remains under the MIT license, and upstream contributors retain the credits and licenses listed below.
 
 ## License, credits, and contributing
 

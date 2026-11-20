@@ -1,8 +1,8 @@
 {
   "name": "pico-hub75-96x48",
   "version": "0.1.0",
-  "description": "RP2040 Arduino-Pico driver for one 96x48 1/24-scan SM5368 HUB75 panel, with Adafruit GFX drawing.",
-  "keywords": ["hub75", "96x48", "sm5368", "rp2040", "waveshare"],
+  "description": "96x48 LED panel driver for Raspberry Pi Pico / Pico W: Waveshare 24S-A1 SM5368 HUB75 RGB LED matrix, Arduino-Pico and Adafruit GFX.",
+  "keywords": ["96x48", "led-panel", "led-matrix", "rgb-matrix", "hub75", "sm5368", "rp2040", "raspberry-pi-pico", "pico-w", "arduino", "platformio", "waveshare"],
   "repository": {"type": "git", "url": "https://github.com/Adri5119/pico-hub75-96x48.git"},
   "authors": [{"name": "Adri5119"}],
   "license": "MIT",
