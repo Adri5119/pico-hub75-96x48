@@ -44,7 +44,7 @@ void testFramebuffer() {
   for (int y = 0; y < 48; ++y) {
     for (int x = 0; x < 96; ++x) {
       check(panel.readPixel(x, y) == (x + 3 * y) % 8, "all 4608 pixels round trip");
-      const unsigned raw = panel.framebuffer()[(y % 24) * 96 + x];
+      const uint8_t raw = panel.framebuffer()[(y % 24) * 96 + x];
       check(((raw >> (y < 24 ? 0 : 3)) & 7) == (x + 3 * y) % 8,
             "row halves pack without overwriting each other");
     }
