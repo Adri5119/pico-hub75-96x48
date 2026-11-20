@@ -1,0 +1,15 @@
+{
+  "name": "pico-hub75-96x48",
+  "version": "0.1.0",
+  "description": "RP2040 Arduino-Pico driver for one 96x48 1/24-scan SM5368 HUB75 panel, with Adafruit GFX drawing.",
+  "keywords": ["hub75", "96x48", "sm5368", "rp2040", "waveshare"],
+  "repository": {"type": "git", "url": "https://github.com/Adri5119/pico-hub75-96x48.git"},
+  "authors": [{"name": "Adri5119"}],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "raspberrypi",
+  "dependencies": {
+    "adafruit/Adafruit GFX Library": "1.13.0",
+    "adafruit/Adafruit BusIO": "1.17.4"
+  }
+}

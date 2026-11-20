@@ -1,0 +1,15 @@
+.pio/
+.vscode/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.uf2
+*.elf
+*.bin
+*.map
+*.zip
+*.log
+local-*
+secrets.h
+secrets.*
